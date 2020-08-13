@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>WeatherApp</AssemblyName>
+    <RootNamespace>WeatherApp</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherClient\WeatherClient_OpenAPI_Tools.csproj" />
+  </ItemGroup>
+
+</Project>
