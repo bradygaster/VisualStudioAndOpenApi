@@ -12,7 +12,7 @@ namespace WeatherApp
             Console.WriteLine("Once the server starts, hit any key to call the weather service");
             Console.ReadLine();
 
-            var client = new WeatherServiceClient("http://localhost:52252", new HttpClient());
+            var client = new WeatherServiceClient("http://localhost:5000", new HttpClient());
             client.GetWeatherForecastAsync().Result.ToList().ForEach(x => Console.WriteLine($"{x.Summary} at {x.TemperatureF}"));
 
             var zipCode = "98052";
